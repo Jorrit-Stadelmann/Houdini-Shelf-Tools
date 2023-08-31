@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<shelfDocument>
+  <!-- This file contains definitions of shelves, toolbars, and tools.
+ It should not be hand-edited when it is being used by the application.
+ Note, that two definitions of the same element are not allowed in
+ a single file. -->
+
+  <toolshelf name="python_script_js" label="Jorrit's Python Scripts">
+    <memberTool name="__transform__set-pivot_centroid"/>
+    <memberTool name="__transform__set-pivot_ymin-centroid.py"/>
+	<memberTool name="__transform__set-position-to-pivot.py"/>
+	<memberTool name="__node__copy-and-create-relative-reference.py"/>
+    <memberTool name="__children__reset-sim-of-children.py"/>
+    <memberTool name="__children_create-geo-render-nodes-for-_CACHE.py"/>
+    <memberTool name="__selected-node-with-ramp__transfer-ramp-values.py"/>
+	<memberTool name="__rslight__create-hlight-with-reference-to-rslight.py"/>
+	<memberTool name="__node__set-ramp-type-colour.py"/>
+	
+  </toolshelf>
+
+  <tool name="__transform__set-pivot_centroid" label="Set Pivot: centroid" icon="OBJ_null">
+    <helpText><![CDATA[Sets Pivot to: $CEX, $CEY, $CEZ | Select Transform Node(s) and run script.]]></helpText>
+    <script scriptType="python"><![CDATA[path = r'U:/js/Python_Scripts/Houdini/__transform__set-pivot_centroid.py'
+exec(open(path).read())]]></script>
+  </tool>
+
+  <tool name="__transform__set-pivot_ymin-centroid.py" label="Set Pivot: YMIN &amp; centroid" icon="OBJ_null">
+    <helpText><![CDATA[Sets Pivot to: $CEX, $YMIN, $CEZ | Select Transform Node(s) and run script.]]></helpText>
+    <script scriptType="python"><![CDATA[path = r'U:/js/Python_Scripts/Houdini/__transform__set-pivot_ymin-centroid.py'
+exec(open(path).read())]]></script>
+  </tool>
+
+  <tool name="__transform__set-position-to-pivot.py" label="Set Position to Pivot" icon="OBJ_null">
+    <helpText><![CDATA[Sets Position to Pivot: (-1* ch(px"), -1* ch("py"), -1* ch("pz")) | Select Transform Node(s) and run script.]]></helpText>
+    <script scriptType="python"><![CDATA[path = r'U:/js/Python_Scripts/Houdini/__transform__set-position-to-pivot.py'
+exec(open(path).read())]]></script>
+  </tool>
+ 
+   <tool name="__node__copy-and-create-relative-reference.py" label="Create Relative Reference" icon="OBJ_null">
+    <helpText><![CDATA[Select nodes to create relative references from. Choose location to create node.]]></helpText>
+    <script scriptType="python"><![CDATA[path = r'U:/js/Python_Scripts/Houdini/__node__copy-and-create-relative-reference.py'
+exec(open(path).read())]]></script>
+  </tool>
+
+  <tool name="__children__reset-sim-of-children.py" label="C: Reset Sim" icon="PLASMA_App">
+    <helpText><![CDATA[Resets Sim of selected nodes direct children.]]></helpText>
+    <script scriptType="python"><![CDATA[path = r'U:/js/Python_Scripts/Houdini/__children__reset-sim-of-children.py'
+exec(open(path).read())]]></script>
+  </tool>
+
+  <tool name="__children_create-geo-render-nodes-for-_CACHE.py" label="C: bgeo.sc rop from _CACHE" icon="PLASMA_App">
+    <helpText><![CDATA[Select Container with nodes that end with the name '_CACHE' to create bgeo.sc rop's in the out context.]]></helpText>
+    <script scriptType="python"><![CDATA[path = r'U:/js/Python_Scripts/Houdini/__children_create-geo-render-nodes-for-_CACHE.py'
+exec(open(path).read())]]></script>
+  </tool>
+
+  <tool name="__selected-node-with-ramp__transfer-ramp-values.py" label="S: Ramp Transfer" icon="PLASMA_App">
+    <script scriptType="python"><![CDATA[path = r'U:/js/Python_Scripts/Houdini/__selected-node-with-ramp__transfer-ramp-values.py'
+exec(open(path).read())]]></script>
+  </tool>
+ 
+  <tool name="__rslight__create-hlight-with-reference-to-rslight.py" label="Create hlight from rslight" icon="OBJ_light">
+    <helpText><![CDATA[Sets Pivot to: $CEX, $CEY, $CEZ | Select Transform Node(s) and run script.]]></helpText>
+    <script scriptType="python"><![CDATA[path = r'U:/js/Python_Scripts/Houdini/__rslight__create-hlight-with-reference-to-rslight.py'
+exec(open(path).read())]]></script>
+  </tool>
+  
+<tool name="__node__set-ramp-type-colour.py" label="Set Ramp Type Colour" icon="SOP_attribwrangle">
+    <helpText><![CDATA[Input ramp name to change ramp type to colour.]]></helpText>
+    <script scriptType="python"><![CDATA[path = r'U:/js/Python_Scripts/Houdini/__node__set-ramp-type-colour.py'
+exec(open(path).read())]]></script>
+  </tool>
+</shelfDocument>
